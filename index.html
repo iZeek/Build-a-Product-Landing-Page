@@ -1,56 +1,51 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
+ <head>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div id="page-wrapper">
+    <script src="https://kit.fontawesome.com/0b20a86ad5.js" crossorigin="anonymous"></script>
+</head>
+<!-- PAGE STARTS HERE -->
+<div id="page-container">
+
+<!-- HEADER CONTENT -->
       <header id="header">
-        <div class="logo">
+        <div class="mylogo">
           <img
             id="header-img"
-            src="images/product-landing-page-logo.png"
-            alt="original trombones logo"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="logo"
           />
         </div>
 
         <nav id="nav-bar">
           <ul>
-            <li><a class="nav-link" href="#features">Features</a></li>
-            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#p-features">Features</a></li>
+            <li><a class="nav-link" href="#video-con">How It Works</a></li>
+            <li><a class="nav-link" href="#price-table">Pricing</a></li>
           </ul>
         </nav>
       </header>
 
-      <div class="container"></div>
-
-      <section id="hero">
+      <br>
+<!-- FORM WITH EMAIL INPUT -->
+      <section id="form-section">
         <h2>Handcrafted, home-made masterpieces</h2>
-        <form id="form" action="#">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
             name="email"
             id="email"
             type="email"
-            placeholder="Enter your email address"
+            placeholder="Enter your email here"
             required
           />
-          <input id="submit" type="submit" value="Get Started" class="btn" />
+          <input id="submit" type="submit" value="Get Started Today" class="btn" />
         </form>
       </section>
 
+<!-- PRODUCT FEATURES -->
       <div class="container">
-        <section id="features">
-          <div class="grid">
+        <section id="p-features">
+          <div class="grid-row">
             <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-            <div class="desc">
+            <div class="desc-text">
               <h2>Premium Materials</h2>
               <p>
                 Our trombones use the shiniest brass which is sourced locally.
@@ -58,9 +53,9 @@
               </p>
             </div>
           </div>
-          <div class="grid">
+          <div class="grid-row">
             <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-            <div class="desc">
+            <div class="desc-text">
               <h2>Fast Shipping</h2>
               <p>
                 We make sure you recieve your trombone as soon as we have
@@ -69,11 +64,11 @@
               </p>
             </div>
           </div>
-          <div class="grid">
+          <div class="grid-row">
             <div class="icon">
               <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
             </div>
-            <div class="desc">
+            <div class="desc-text">
               <h2>Quality Assurance</h2>
               <p>
                 For every purchase you make, we will ensure there are no damages
@@ -83,18 +78,16 @@
             </div>
           </div>
         </section>
-        <section id="how-it-works">
-          <iframe
-            id="video"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+
+<!-- EMBEDDED VIDEO -->
+        <section id="video-con">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
         </section>
-        <section id="pricing">
+
+<!-- PRICE TABLE -->
+        <section id="price-table" class="section">
           <div class="product" id="tenor">
-            <div class="level">Tenor Trombone</div>
+            <div class="top">Tenor Trombone</div>
             <h2>$600</h2>
             <ol>
               <li>Lorem ipsum.</li>
@@ -105,7 +98,7 @@
             <button class="btn">Select</button>
           </div>
           <div class="product" id="bass">
-            <div class="level">Bass Trombone</div>
+            <div class="top">Bass Trombone</div>
             <h2>$900</h2>
             <ol>
               <li>Lorem ipsum.</li>
@@ -116,7 +109,7 @@
             <button class="btn">Select</button>
           </div>
           <div class="product" id="valve">
-            <div class="level">Valve Trombone</div>
+            <div class="top">Valve Trombone</div>
             <h2>$1200</h2>
             <ol>
               <li>Plays similar to a Trumpet</li>
@@ -127,6 +120,8 @@
             <button class="btn">Select</button>
           </div>
         </section>
+
+<!-- FOOTER SECTION -->
         <footer>
           <ul>
             <li><a href="#">Privacy</a></li>
@@ -137,5 +132,3 @@
         </footer>
       </div>
     </div>
-  </body>
-</html>
